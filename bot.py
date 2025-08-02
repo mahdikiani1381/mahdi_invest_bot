@@ -14,7 +14,7 @@ def suggest(update, context):
 def prices(update, context):
     dollar = get_dollar_price()
     bitcoin = get_bitcoin_price()
-    msg = f"💹 قیمت فعلی دلار: {dollar} تومان\n📉 قیمت بیت‌کوین: {bitcoin} دلار"
+    msg = f"💵 قیمت فعلی دلار: {dollar} تومان\n₿ قیمت بیت‌کوین: {bitcoin} دلار"
     update.message.reply_text(msg)
 updater = Updater(TELEGRAM_TOKEN)
 dp = updater.dispatcher
